@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(219, 196, 226);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, footer {
+    color: rgb(139, 92, 184);
+    background-color: rgb(210, 182, 237);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.site-title {
+    color: rgb(126, 13, 212);
+}
+
+#my-image {
+    box-shadow: 0  0  2px  1px black;
+}
+
+ul.skills {
+    list-style: square;
+}
+
+li:nth-child(1){
+    background-color: rgb(194, 160, 225);
+}
+
+li:nth-child(2){
+    background-color: rgb(175, 138, 209);
+}
+header a {
+    color: black;
+    background-color: rgb(198, 162, 221);
+    border: 2px solid rgb(171, 97, 210); 
+}
+
+header a:hover {
+    text-decoration: underline;
+    border: none;
+}
