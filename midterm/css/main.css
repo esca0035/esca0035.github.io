@@ -93,6 +93,8 @@ nav ul li:first-child {
 
 nav ul {
     list-style: none;
+
+    /*add border;*/
 }
 
 nav ul li a {
@@ -114,7 +116,11 @@ nav ul li a {
 
 #input-email {
     width: 100%;
+
+
 }
+
+
 
 #input-message {
     width: 100%;
