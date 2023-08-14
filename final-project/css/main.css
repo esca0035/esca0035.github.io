@@ -195,9 +195,11 @@ h3{
 
 }
 
+
 span.arrow{
 font-size: 3em;
 }
+
 
 
 #vision {
@@ -235,10 +237,7 @@ font-size: 3em;
     background-color: moccasin;
 }
 
-.our-team-text {
-    display: grid;
-    gap: 0.8rem;
-}
+
 
 .our-team h3 {
     padding: 0.8rem;
@@ -272,7 +271,8 @@ font-size: 3em;
     gap: 1rem;
     
     }
-
+   
+    
 
 #contact h3 {
     font-size: 1.8rem;
@@ -461,17 +461,28 @@ header .wrapper{
     }
     /* Our Team */
   
-    .our-team {
+    .wrapper .our-team {
         display: flex;
+        flex-direction: row;
+    }
+
+    .wrapper .our-team > .our-team {
+        flex-direction: row-reverse;
+    }
+
+    .wrapper .our-team img {
+        order: 1;
+    }
+
+    .wrapper .our-team .our-team-text {
+        order: 2;
+    }
+
+    .our-team-text {
+        flex: 1;
         margin: 0;
     }
 
-    
-
-    .our:nth-child(2) {
-        flex-direction: row-reverse;
-    }
-   
     
    
    
