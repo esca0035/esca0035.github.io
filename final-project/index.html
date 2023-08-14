@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
     <header>
         <div class="wrapper">
-            <nav>
+            <img src="images/logo.png" alt="the logo">
+            <nav id="nav-list">
                <!-- Image is the logo, the first picture -->
-                <img src="images/logo.png" alt="the logo">
+               
 
-                <ul> <!-- navegation bar -->
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Team</li>
-                    <li>Contact</li>
-                </ul>
-                <form> <!-- search button nav bar -->
-                    <input type="text" placeholder="Search">
-                    <button type="submit" id="search-button"><i class="submit-button"></i></button>
-                </form>
-                <img src="images/main-banner.jpg" alt="main-picture">
+               <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+                
+               
             </nav>
-
+            
+            <form class="search-box"> <!-- search button nav bar -->
+                <input class="search-bar" type="text" placeholder="Search">
+                <button type="submit" id="search-button"><span class="material-symbols-outlined search">
+                    search
+                    </span></button>
+            </form>
+            
     
           
         </div>
@@ -44,10 +54,14 @@
 
                <h1>Welcome to Three Star Media</h1>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui earum, doloribus soluta quaerat aliquid dolores veniam consequatur laborum iure, eum porro? Deserunt autem inventore animi quisquam porro asperiores dolor.</p>
-               <button type="button">Connect with us <i class="conect-with-us-button"></i></button>
+               <button class="connect-btn" type="button">
+                <span>Connect with us</span> 
+                <span class="material-symbols-outlined arrow">
+                arrow_right
+                </span></button>
            </div>
        </div>
-   </main>
+  
 
    <section id="about-us">
 
@@ -55,11 +69,14 @@
 
     <div class="wrapper">
         <img src="images/about-us.jpg" alt="ping-pong-table-pic">
-            <div id="about-us-text">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi doloremque cum nihil sint placeat provident veritatis obcaecati incidunt, id eligendi quaerat dolores repellendus quas non, sequi doloribus saepe itaque.</p>
-            </div>
+        <div id="about-us-text">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi doloremque cum nihil sint placeat provident veritatis obcaecati incidunt, id eligendi quaerat dolores repellendus quas non, sequi doloribus saepe itaque.</p> 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio voluptas tempore nesciunt, praesentium quidem quas beatae recusandae numquam culpa neque placeat fugiat itaque blanditiis, facere unde? Cupiditate voluptatibus illum qui.</p>
+        </div>
     </div>
+
+
 </section>
 <section id="services">
 <!-- SERVICES -->
@@ -70,47 +87,59 @@
 
             
 
-                <div class="services-container">
+                <div class="our-services">
 
                    
 
-                    <div class="service">
+                    <div class="service" id="first">
                         <img src="images/digital.jpg" alt="first-picture-of-services-phoneandcomputer">
+                        <div>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum iure! Numquam odit similique officia enim aspernatur cum quo dolorem accusantium, necessitatibus quam, quos minus maxime assumenda eligendi commodi provident!</p>
-                        <button type="button" class="service-button">Digital Plans <i class="buttons"></i></button>
+                    </div>
+                        <button type="button" class="service-button">Digital Plans <span class="material-symbols-outlined">
+                            arrow_right
+                            </span></button>
                     </div>
 
-                    <div class="service">
+                    <div class="service" id="second">
                         <img src="images/marketing.jpg" alt="second-picture-of-services-computer">
-                        
+                        <div>
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum iure! Numquam odit similique officia enim aspernatur cum quo dolorem accusantium, necessitatibus quam, quos minus maxime assumenda eligendi commodi provident!</p>
-                       
+                    </div>
                        
                         <button type="button" class="service-button">Marketing Plans <i class="buttons"></i></button>
                     </div>
-                    <div class="service">
+                    <div class="service" id="third">
                         <img src="images/video.jpg" alt="third-pic-services-youtube">
+                       <div>
                         <h3>Video Production</h3>
                        
                        
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum iure! Numquam odit similique officia enim aspernatur cum quo dolorem accusantium, necessitatibus quam, quos minus maxime assumenda eligendi commodi provident!</p>
                         <button type="button" class="service-button">Video Plans <i class="buttons"></i></button>
+                        </div>
                     </div>
 
-                    <div class="service">
+                    <div class="service" id="fourth">
                         <img src="images/web.jpg" alt="forth-pic-services-phone-and-notebook">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum iure! Numquam odit similique officia enim aspernatur cum quo dolorem accusantium, necessitatibus quam, quos minus maxime assumenda eligendi commodi provident!</p>
-                        <button type="button" class="service-button">Web Plans <i class="buttons"></i></button>
+                        <div>
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum iure! Numquam odit similique officia enim aspernatur cum quo dolorem accusantium, necessitatibus quam, quos minus maxime assumenda eligendi commodi provident!</p>
+                            <button type="button" class="service-button">Web Plans <i class="buttons"></i></button>
+                        </div>
+                        
                     </div>
 
-                    <div class="service">
+                    <div class="service" id="fifth">
                         <img src="images/print.jpg" alt="last-pic-services-print">
+                        <div>
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, laborum iure! Numquam odit similique officia enim aspernatur cum quo dolorem accusantium, necessitatibus quam, quos minus maxime assumenda eligendi commodi provident!</p>
+                    
                         <button type="button" class="service-button">Print Plans <i class="buttons"></i></button>
+                    </div>
                     </div>
 
                 </div>
@@ -140,21 +169,21 @@
 
                     
 
-                    <div class="our-team">
+                    <div class="our-team" id="teamone" >
                         <img src="images/john.jpg" alt="picture of john doe">
                             <div class="our-team-text">
                                 <h3>John Doe</h3>
                                 <h4>CEO and Co-owner</h4>
-                                <hr>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima nam repellendus eligendi deleniti consectetur repellat ad at excepturi nulla. Modi, temporibus sint. Voluptatem, provident pariatur consequatur quisquam maxime dolor.</p>
+                                
+                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est minima nam repellendus eligendi deleniti consectetur repellat ad at excepturi nulla. Modi, temporibus sint. Voluptatem, provident pariatur consequatur quisquam maxime dolor.</p>
                             </div>
                     </div>
-                    <div class="our-team">
+                    <div class="our-team" id="">
                         <img src="images/bob.jpg" alt="image of bob">
                             <div class="our-team-text">
                                 <h3>Bob Rite</h3>
                                 <h4>CFO and Co-owner</h4>
-                                <hr>
+                                
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos provident, magnam ipsam laborum sint, perspiciatis totam odit dolorem, non ad assumenda quis laboriosam commodi natus eligendi tempora dolorum nemo corrupti.</p>
                             </div>
                     </div>
@@ -171,7 +200,7 @@
 
             <section id="contact">
 
-                    <div id="contact-container">
+                    <div id="contact-box">
                         <h2>Contact Us</h2>
                             <h3>Send us a message</h3>
 
@@ -195,7 +224,7 @@
 
                 <h3>Hours of operation</h3>
 
-              <!-- timetable, fugure out how to do this for the css-->
+              <!-- timetable, fiugure out how to do this for the css-->
 
                     <table>
 
@@ -233,12 +262,14 @@
     </section>
 </div>
 
-</div>
+    </div>
+</main>
+
 
 <footer>
 <div class="wrapper"> <!--footer, put text decoration on "unsplash" in the css-->
 
-    <p>©Copyright Three Star Media, 2022</p>
+    <p>©Copyright Three Star Media, 2020</p>
     <p>All images are taken from Unsplash</p>
 </div>
 </footer>
