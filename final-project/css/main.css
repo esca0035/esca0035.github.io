@@ -481,9 +481,18 @@ header .wrapper{
     .our-team-text {
         flex: 1;
         margin: 0;
+        
+    }
+    #team img {
+        width: 50%;
     }
 
     
+
+    #team img{
+        flex-direction: row-reverse;
+    }
+
    
    
     /* Ending Container Styles */
@@ -514,6 +523,9 @@ header .wrapper{
         grid-template-rows: repeat(2, 1fr);
         column-gap: 5px;
     }
+    
+    
+    
 }
  
 
